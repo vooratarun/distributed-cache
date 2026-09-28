@@ -1,0 +1,16 @@
+services:
+  redis-a:
+    image: redis:7-alpine
+    container_name: redis-a
+    ports:
+      - "6379:6379"
+  redis-b:
+    image: redis:7-alpine
+    container_name: redis-b
+    ports:
+      - "6380:6379"
+  redis-c:
+    image: redis:7-alpine
+    container_name: redis-c
+    ports:
+      - "6381:6379"
